@@ -1,0 +1,146 @@
+/*Importing Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    background-color: #f0f0f0;
+}
+
+.form-container {
+    max-width: 430px;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-container .form {
+    padding: 30px;
+}
+
+.form-container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '' ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 25px;
+
+}
+
+.form .input-field{
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+.input-field input{
+    height: 100%;
+    width: 100%;
+    padding: 0 35px ;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease; 
+}
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4 ;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+
+
+.input-field i.icon{
+    left: 0;
+}
+
+.input-field i.showHidePw{
+    right: 0;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color: #4070f4 ;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    background-color: #4070f4;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
+
+.form .login-register{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login-register .text a{
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form .register-login{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.register-login .text a{
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.register-login .text a:hover{
+    color: #4070f4;
+    text-decoration: underline;
+}
+
+.role-text .role-content{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.role-content .Role{
+    margin-top: 30px;
+}
